@@ -5,4 +5,22 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="CustomActivityTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/CustomActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <!-- support lib compatible -->
+        <item name="actionBarStyle">@style/CustomActionBarStyle</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <!-- ActionBar Style-->
+    <style name="CustomActionBarStyle" parent="Widget.AppCompat.ActionBar.Solid">
+        <item name="android:background">@color/CustomActionBarBackgroundColor</item>
+
+        <!-- support lib compatible -->
+        <item name="background">@color/CustomActionBarBackgroundColor</item>
+    </style>
+
+
+
 </resources>
