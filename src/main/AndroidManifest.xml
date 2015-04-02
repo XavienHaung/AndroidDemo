@@ -19,6 +19,7 @@
         <activity
             android:name=".ActionBarDemoActivity"
             android:theme="@style/CustomActivityTheme"
+            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_action_bar_demo"
             android:parentActivityName=".MainActivity" >
             <meta-data
