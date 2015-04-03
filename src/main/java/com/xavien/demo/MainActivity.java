@@ -1,10 +1,8 @@
 package com.xavien.demo;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 
 
@@ -19,8 +17,10 @@ public class MainActivity extends ActionBarActivity {
     public void onButtonClick(View view){
         switch (view.getId()){
             case R.id.btn_jumptoactionbardemo:
-                Intent intent = new Intent(this, ActionBarDemoActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(this, ActionBarDemoActivity.class));
+                break;
+            case R.id.btn_jumptofragmentdemo:
+                startActivity(new Intent(this, FragmentDemoActivity.class));
                 break;
             default:
                 break;
