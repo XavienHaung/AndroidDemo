@@ -4,6 +4,10 @@
     <string name="hello_world">My Demo</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_action_bar_demo">ActionBarDemo</string>
-    <string name="title_btn_jumpactionbardemo">Jump to action bar demo</string>
+    <string name="title_activity_fragment_demo">FragmentDemo</string>
+    <string name="btn_jumpactionbardemo">Jump to action bar demo</string>
+    <string name="btn_jumpfragmentdemo">Jump to fragment demo</string>
     <string name="action_search">Search</string>
+    <string name="demo_fragment_tips_a">fragment demo tips a</string>
+    <string name="demo_fragment_tips_b">fragment demo tips b</string>
 </resources>
