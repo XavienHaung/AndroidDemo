@@ -1,19 +1,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             android:orientation="vertical">
+             android:orientation="vertical"
+             android:padding="16dp">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Switch Fragments"
-        android:layout_gravity="center_horizontal"
-        android:onClick="onFragmentsSwitch"/>
-
-    <FrameLayout android:id="@+id/demo_fragment_container"
+    <fragment android:name="com.xavien.demo.InputFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
-    </FrameLayout>
+    <fragment android:id="@+id/display_fragment"
+        android:name="com.xavien.demo.DisplayFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
 </LinearLayout>

@@ -14,4 +14,10 @@ public class XLog {
             Log.i(TAG, msg);
         }
     }
+
+    public  static void e(String TAG, String msg){
+        if(DEBUG){
+            Log.e(TAG, msg);
+        }
+    }
 }
