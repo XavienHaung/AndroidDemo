@@ -17,9 +17,8 @@ public class FragmentDemoActivity extends ActionBarActivity implements InputFrag
 
     @NonNull
     @Override
-    public void onDisplayButtonClick(String input) {
+    public void onDisplayButtonClick() {
         DisplayFragment fragment = (DisplayFragment)getSupportFragmentManager().findFragmentById(R.id.display_fragment);
-        fragment.display(input);
-
+        fragment.update();
     }
 }
