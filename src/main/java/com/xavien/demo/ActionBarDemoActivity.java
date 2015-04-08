@@ -1,9 +1,11 @@
 package com.xavien.demo;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.PersistableBundle;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -73,6 +75,16 @@ public class ActionBarDemoActivity extends ActionBarActivity {
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         XLog.i(TAG, "onRestoreInstanceState================");
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        boolean isKeyHandled = false;
+        if(keyCode == KeyEvent.KEYCODE_BACK){
+            setResult(1, new Intent().putExtra("result", "handled"));
+        }
+
+        return super.onKeyDown(keyCode, event);
     }
 
     @Override

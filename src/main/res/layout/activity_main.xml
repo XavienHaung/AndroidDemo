@@ -8,12 +8,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btn_jumpactionbardemo"
-        android:onClick="onButtonClick"/>
+        android:onClick="onButtonClick"
+        android:textAllCaps="false"/>
 
     <Button android:id="@+id/btn_jumptofragmentdemo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btn_jumpfragmentdemo"
-        android:onClick="onButtonClick"/>
+        android:onClick="onButtonClick"
+        android:textAllCaps="false"/>
+
+    <Button android:id="@+id/btn_launcherapps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Launch Apps"
+        android:onClick="onButtonClick"
+        android:textAllCaps="false"/>
 
 </LinearLayout>
