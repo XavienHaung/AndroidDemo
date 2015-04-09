@@ -26,7 +26,9 @@ public class MainActivity extends ActionBarActivity {
     private void launchOtherApps(){
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_SEND);
-        Intent chooser = Intent.createChooser(intent, "Shared video via");
+        intent.putExtra(Intent.EXTRA_TEXT, "Message to send");
+        intent.setType("text/plain");
+        Intent chooser = Intent.createChooser(intent, "Send message via");
         startActivity(chooser);
     }
 

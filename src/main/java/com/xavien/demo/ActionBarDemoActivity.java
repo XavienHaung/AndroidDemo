@@ -1,12 +1,16 @@
 package com.xavien.demo;
 
+import android.app.Activity;
+import android.app.Instrumentation;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.PersistableBundle;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.internal.widget.ActivityChooserModel;
 import android.view.KeyEvent;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.xavien.utils.XLog;
@@ -81,10 +85,17 @@ public class ActionBarDemoActivity extends ActionBarActivity {
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         boolean isKeyHandled = false;
         if(keyCode == KeyEvent.KEYCODE_BACK){
-            setResult(1, new Intent().putExtra("result", "handled"));
+            setResult(Activity.RESULT_OK, new Intent().putExtra("result", "handled"));
         }
 
         return super.onKeyDown(keyCode, event);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.actionbardemo_actions, menu);
+
+        return true;
     }
 
     @Override
