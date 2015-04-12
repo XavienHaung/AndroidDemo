@@ -7,6 +7,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        
+        <!-- Activities -->
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
@@ -39,6 +41,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.xavien.demo.MainActivity" />
         </activity>
+        
+        <!-- Providers -->
+        <provider android:authorities="com.xavien.demo.fileprovider"
+            android:name="android.support.v4.content.FileProvider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths"/>
+        </provider>
     </application>
 
 </manifest>

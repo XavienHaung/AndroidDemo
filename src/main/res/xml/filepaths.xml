@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<path>
+    <files-path path="sharedFiles" name="files"/>
+    <external-path path="sharedFiles" name="files"/>
+    <cache-path path="sharedFiles" name="files"/>
+</path>
